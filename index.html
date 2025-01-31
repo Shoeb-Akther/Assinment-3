@@ -12,17 +12,7 @@
  <script src="https://cdn.tailwindcss.com"></script>
  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 
- <script>
- tailwind.config = {
- theme: {
- extend: {
- colors: {
- clifford: '#E76F51',
- }
- }
- }
- }
- </script>
+ 
  <style>
  .sora-normal {
   font-family: "Sora", serif;
@@ -38,16 +28,139 @@
 </head>
 <body class="sora-normal">
  <!-- header -->
- <header>
- <h1 class="text-5xl">shoeb</h1>
+ <header style="background-color: #fff9f4;">
+    <div class="navbar w-11/12 mx-auto">
+        <div class="navbar-start flex-row-reverse justify-end">
+          <div class="dropdown text-right">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+          </div>
+          <a class="btn btn-ghost text-xl gap-0 border-0 pl-0 pr-5 "><div><img class="pr-3" src="./style/logo-header.png" alt=""></div><div class="opacity-0 lg:opacity-100">Browse<span style="color:#FFDC26;">4</span>Pets</div></a>
+        </div>
+        <div class="navbar-center lg:flex hidden">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-2 hidden lg:block lg:text-right">
+          <button class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle w-2">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+          <button class="btn font-normal bg-transparent ml-4 mr-2" style="border:1px solid #FFDC26;">Login</button>
+          <button class="btn font-normal" style="background-color: #FFDC26;">Register</button>
+        </div>
+      </div>
  </header>
 
 
  <!-- main -->
- <main></main>
+ <main>
+  <section>
+    <div class=" w-11/12 mx-auto h-full  bg-[url('./style/cat-big.png')] bg-contain bg-bottom bg-no-repeat po">
+      <h1 class="adlamRegular text-3xl lg:text-5xl pt-16">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
+      <p class="text-base font-normal my-5">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
+      <button class="lg:mb-80 mb-32 btn font-normal text-base" style="background-color: #FFDC26;">Fiend a Pet</button>
+    </div>
+  </section>
+  <section>
+    <div class="w-11/12 mx-auto">
+      <div>
+        <h2 class="text-4xl adlamRegular pb-12 pt-14 lg:pt-32">Browse By Categories</h2>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-6 gap-6">
+        <div class="px-12 py-9 flex flex-col items-center justify-center rounded-lg" style="background: #F9DF8A;">
+          <div class="text-center w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center">
+            <img src="./style/dog-cartoon.png" alt="" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl text-center adlamRegular pt-2">Dog</h3>
+          <p class="text-center">3 items</p>
+        </div>
+        <div class="px-12 py-9 flex flex-col items-center justify-center rounded-lg" style="background: #F9DF8A;">
+          <div class="text-center w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center">
+            <img src="./style/fish-cartoon.png" alt="" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl text-center adlamRegular pt-2">Dog</h3>
+          <p class="text-center">3 items</p>
+        </div>
+        <div class="px-12 py-9 flex flex-col items-center justify-center rounded-lg" style="background: #F9DF8A;">
+          <div class="text-center w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center">
+            <img src="./style/cat-cartoon.png" alt="" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl text-center adlamRegular pt-2">Dog</h3>
+          <p class="text-center">3 items</p>
+        </div><div class=" px-12 py-9 flex flex-col items-center justify-center rounded-lg" style="background: #F9DF8A;">
+          <div class="text-center w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center">
+            <img src="./style/bird-cartoon.png" alt="" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl text-center adlamRegular pt-2">Dog</h3>
+          <p class="text-center">3 items</p>
+        </div><div class="px-12 py-9 flex flex-col items-center justify-center rounded-lg" style="background: #F9DF8A;">
+          <div class="text-center w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center">
+            <img src="./style/mouse-cartoon.png" alt="" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl text-center adlamRegular pt-2">Dog</h3>
+          <p class="text-center">3 items</p>
+        </div><div class=" px-12 py-9 flex flex-col items-center justify-center rounded-lg" style="background: #F9DF8A;">
+          <div class="text-center w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center">
+            <img src="./style/rabbit-cartoon.png" alt="" class="w-12 h-12">
+          </div>
+          <h3 class="text-xl text-center adlamRegular pt-2">Dog</h3>
+          <p class="text-center">3 items</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ </main>
+
+
 
 
  <!-- footer -->
- <footer></footer>
+ <footer>
+  <h1 class="text-5xl" style="height: 300px; background-color:#FFDC26;" >hoeb</h1>
+ </footer>
 </body>
 </html>
